@@ -8,6 +8,7 @@ git:
   depth: 3
 script:
   - yarn build
+  - echo 'cv.arepa.dev' > public/CNAME
 deploy:
   name: Elmo@gremlim
   provider: pages
@@ -17,5 +18,6 @@ deploy:
   local-dir: dist/
   target-branch: master
   commit_message: "Elmo@gremlim - Deploy release ${TRAVIS_TAG}"
+  fqdn: cv.arepa.dev
   on:
     branch: develop
