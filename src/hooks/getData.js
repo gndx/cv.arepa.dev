@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
 const getData = (url) => {
-  const [person, usePerson] = useState([]);
+  const [myData, setData] = useState([]);
 
   useEffect(() => {
     fetch(url)
       .then(response => response.json())
-      .then(myData => usePerson(myData));
+      .then(data => setData(data));
   }, []);
 
-  return person;
+  return myData;
 }
 
 export default getData;
