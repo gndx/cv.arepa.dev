@@ -40,19 +40,6 @@ module.exports = {
       { from: './public/manifest.json' },
       { from: './manifest.json' },
     ]),
-    new FaviconsWebpackPlugin({
-      logo: './public/icon.png',
-      prefix: 'icons/',
-      inject: true,
-      background: '#fff',
-      title: 'React CV',
-      icons: {
-        android: true,
-        appleIcon: true,
-        favicons: true,
-        opengraph: false,
-        twitter: false,
-      }
-    }),
+    new FaviconsWebpackPlugin('./public/icon.png'),
   ],
 };
