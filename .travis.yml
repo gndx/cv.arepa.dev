@@ -8,14 +8,15 @@ git:
   depth: 3
 script:
   - yarn build
-  - echo 'cv.arepa.dev' > public/CNAME
 deploy:
+  name: Elmo@gremlim
+  github-url: cv.arepa.dev
   provider: pages
   skip-cleanup: true
   keep-history: true
   github-token: $GITHUB_TOKEN
   local-dir: dist/
   target-branch: master
-  commit_message: "Deploy release ${TRAVIS_TAG}"
+  commit_message: "Elmo@gremlim - Deploy release ${TRAVIS_TAG}"
   on:
     branch: develop
