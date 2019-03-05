@@ -10,7 +10,6 @@ script:
   - yarn build
 deploy:
   name: Elmo@gremlim
-  github-url: cv.arepa.dev
   provider: pages
   skip-cleanup: true
   keep-history: true
