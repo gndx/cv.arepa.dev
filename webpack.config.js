@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
@@ -36,13 +35,9 @@ module.exports = {
       template: "./public/index.html",
       filename: "./index.html"
     }),
-    new CopyPlugin([
-      { from: './public/manifest.json' },
-      { from: './manifest.json' },
-    ]),
     new FaviconsWebpackPlugin({
       logo: './public/icon.png',
-      prefix: 'icons/',
+      prefix: 'assets/',
       inject: true,
       background: '#fff',
       title: 'React CV',
