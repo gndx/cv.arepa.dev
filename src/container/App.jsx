@@ -1,6 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from "styled-components";
-import getData from '../hooks/getData';
+import useGetData from '../hooks/useGetData';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 import Info from '../components/Info';
@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = () => {
-  const data = getData(API);
+  const data = useGetData(API);
   return data.length === 0 ? <><GlobalStyle /><Loader /></> : (
     <Main>
       <GlobalStyle />
