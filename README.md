@@ -26,6 +26,19 @@ Aprenderemos:
 
 API: https://us-central1-gndx-cv.cloudfunctions.net/me
 
+#### Utilerias de desarrollo
+**React Documentación**: https://es.reactjs.org/
+
+**Styled Components**: https://www.styled-components.com/
+
+**React Hooks**: https://es.reactjs.org/docs/hooks-intro.html
+
+**Box Shadow CSS**: https://www.cssmatic.com/box-shadow
+
+**Favicon**: https://www.favicon-generator.org/
+
+**CSS Grid**: https://www.w3schools.com/css/css_grid.asp
+
 ### Instalación
 
 ```
