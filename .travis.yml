@@ -7,7 +7,6 @@ node_js:
 git:
   depth: 3
 script:
-  - yarn test
   - yarn build
   - echo 'cv.arepa.dev' > public/CNAME
 deploy:
@@ -17,7 +16,7 @@ deploy:
   keep-history: true
   github-token: $GITHUB_TOKEN
   local-dir: dist/
-  target-branch: master
+  target-branch: gh-pages
   commit_message: "Elmo@gremlim - Deploy release ${TRAVIS_TAG}"
   fqdn: cv.arepa.dev
   on:
