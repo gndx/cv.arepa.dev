@@ -7,6 +7,7 @@ node_js:
 git:
   depth: 3
 script:
+  - yarn test
   - yarn build
   - echo 'cv.arepa.dev' > public/CNAME
 deploy:
